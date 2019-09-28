@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Hello, World! Welcome to <%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<h1><%= title %></h1>
+	<p>Welcome to <%= testVar[0].Database %></p>
+
+	<h1>Database List</h1>
+	<ul>
+	  <%
+		var list = '';
+		for (i = 0; i < testVar.length; i++) {
+		  list += '<li>' + testVar[i].Database + '</li>';
+		}
+	  %>
+	  <%- list %>
+	</ul>
+
+  </body>
+</html>
