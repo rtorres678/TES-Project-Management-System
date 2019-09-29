@@ -1,4 +1,5 @@
 CREATE DATABASE `projectmanagementsystem` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE  projectmanagementsystem;
 CREATE TABLE `action_item` (
   `Project Number` varchar(15) NOT NULL,
   `WBSCode` varchar(15) NOT NULL,
