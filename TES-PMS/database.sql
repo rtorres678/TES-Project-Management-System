@@ -1,18 +1,5 @@
 CREATE DATABASE `projectmanagementsystem` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE  projectmanagementsystem;
-CREATE TABLE `action_item` (
-  `Project Number` varchar(15) NOT NULL,
-  `WBSCode` varchar(15) NOT NULL,
-  `DeliverableCode` varchar(15) NOT NULL,
-  `Creation Date` date NOT NULL,
-  `Plan Date` date DEFAULT NULL,
-  `Actual Date` date DEFAULT NULL,
-  `Plan Effort` double DEFAULT NULL,
-  `Actual Effort` double DEFAULT NULL,
-  `Status` enum('Not Done','Done','Canceled') NOT NULL DEFAULT 'Not Done',
-  `Notes` longtext,
-  PRIMARY KEY (`Project Number`,`WBSCode`,`DeliverableCode`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `action_item` (
   `ProjectNumber` varchar(15) NOT NULL,
